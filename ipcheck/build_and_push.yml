@@ -1,0 +1,5 @@
+# Run with command: az acr run --registry <your_registry_name> --file ipcheck/build_and_push.yml --set ID=<tag_version> ipcheck
+version: v1.1.0
+steps:
+  - build: -t $Registry/ipcheck:$ID .
+  - push: ["$Registry/ipcheck:$ID"]
