@@ -1,7 +1,7 @@
 ﻿// Check if network is available and dox yourself if it is
 if (System.Net.NetworkInformation.NetworkInterface.GetIsNetworkAvailable())
 {
-    System.Console.WriteLine("Curent IP Addresses for this container:");
+    System.Console.WriteLine("Current IP Addresses for this container:");
 
     var hostname = System.Net.Dns.GetHostName();
     System.Console.WriteLine(hostname);
